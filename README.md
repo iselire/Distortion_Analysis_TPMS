@@ -1,7 +1,7 @@
 # SEA
 Scripts and graphics used for the publication of "Macroscopic Order in Block Copolymer Gyroid Films by Solvent Evaporation Annealing"
 
-## Python environment for Spyder
+## Python environment for Spyder (Conda: anaconda3 (Python 3.13.5)):
 Python 3.13.5 | packaged by Anaconda, Inc. | 
 (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]
 Type "copyright", "credits" or "license" for more information.
