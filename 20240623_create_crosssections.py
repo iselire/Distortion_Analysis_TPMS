@@ -229,7 +229,7 @@ def create_affine_matrix(angles, translation, scaling, shearing):
     return M
 
 
-def create_4cs(v_scaling, v_rot, v_shearing, grid_size, unitcell, miller, t):
+def create_4cs(v_scaling, v_rot, v_shearing, grid_size, unitcell, miller, t, corner):
 
     # Combine transformation matrices
     # M = T.dot(S).dot(SH).dot(R)
@@ -289,34 +289,45 @@ def create_4cs(v_scaling, v_rot, v_shearing, grid_size, unitcell, miller, t):
     level_set_transformed3 = B[3].reshape(X.shape)
     
     bin_im = (make_binary(level_set_transformed0, t), make_binary(level_set_transformed1, t), make_binary(level_set_transformed2, t), make_binary(level_set_transformed3, t))
-    
+
     ##############################################################################
     # levelset F090
-    label1 = 'F090'
+    if corner == 'L':
+        label1 = 'F090'
+    elif corner == 'R':
+        label1 = 'R090'
     # Apply transformation to grid points
     norm1 = miller_indices_to_normal(miller[0], miller[1], miller[2])
     norm1 = transform_normal(norm1, M2)
     norm1 = miller_indices_to_normal(norm1[0], norm1[1], norm1[2])
-    
+
     ##############################################################################
     # levelset F024
-    label2 = 'F024'
+    if corner == 'L':
+        label2 = 'F024'
+    elif corner == 'R':
+        label2 = 'R024'
     norm2 = transform_normal(norm1, R2)
     norm2 = miller_indices_to_normal(norm2[0], norm2[1], norm2[2])
 
-    
     ##############################################################################
     # levelset L090
-    label3 = 'L090'
+    if corner == 'L':
+        label3 = 'L090'
+    elif corner == 'R':
+        label3 = 'F090'
     norm3 = transform_normal(norm1, R3)
     norm3 = miller_indices_to_normal(norm3[0], norm3[1], norm3[2])
-    
+
     ##############################################################################
     # levelset L024
-    label4 = 'L024'
+    if corner == 'L':
+        label4 = 'L024'
+    elif corner == 'R':
+        label4 = 'F024'
     norm4 = transform_normal(norm3, R4)
     norm4 = miller_indices_to_normal(norm4[0], norm4[1], norm4[2])
-    
+
     Rtsn = create_affine_matrix(angles = (0, 90, 0), translation = (0, 0, 0), scaling = (1, 1, 1), shearing = (0, 0, 0, 0, 0, 0))
     topsurf_norm = transform_normal(norm1, Rtsn)
     topsurf_norm = miller_indices_to_normal(topsurf_norm[0], topsurf_norm[1], topsurf_norm[2])
@@ -998,7 +1009,7 @@ def big_loop(sf, sd, gs, uc, miller, co, square_shift, iv_inp):
         # performing crosscorrelation of the model with the 4 FIB SEM cuts
         binary_images, norm_images, labels, matrices, A, topsurface = create_4cs(v_scaling, v_rotations,
                                                                                  v_shearing, gs, uc,
-                                                                                 miller, t)
+                                                                                 miller, t, corner)
         top_transf_matrices, top_score, max_location, model_matrices, top_v_sca, top_v_rot, top_v_she, topsurfaces, t, cropped_samples, top_corr_a = perform_crosscorrelation_left(
             sd, sample_pixel_size, square_shift, binary_images, norm_images, topsurface, matrices, t,
             top_F90_scores, top_matrix_F90, max_location_F90, model_matrices_F90,
@@ -1039,7 +1050,7 @@ def big_loop(sf, sd, gs, uc, miller, co, square_shift, iv_inp):
                         # performing crosscorrelation of the model with the 4 FIB SEM cuts
                         binary_images, norm_images, labels, matrices, A, topsurface = create_4cs(v_scaling, v_rotations,
                                                                                                  v_shearing, gs, uc,
-                                                                                                 miller, t)
+                                                                                                 miller, t, corner)
                         top_transf_matrices, top_score, max_location, model_matrices, top_v_sca, top_v_rot, top_v_she, topsurfaces, t, cropped_samples, top_corr_a = perform_crosscorrelation_left(
                             sd, sample_pixel_size, square_shift, binary_images, norm_images, topsurface, matrices, t,
                             top_F90_scores, top_matrix_F90, max_location_F90, model_matrices_F90,
@@ -1071,7 +1082,7 @@ def big_loop(sf, sd, gs, uc, miller, co, square_shift, iv_inp):
                         # performing crosscorrelation of the model with the 4 FIB SEM cuts
                         binary_images, norm_images, labels, matrices, A, topsurface = create_4cs(v_scaling, v_rotations,
                                                                                                  v_shearing, gs, uc,
-                                                                                                 miller, t)
+                                                                                                 miller, t, corner)
                         top_transf_matrices, top_score, max_location, model_matrices, top_v_sca, top_v_rot, top_v_she, topsurfaces, t, cropped_samples, top_corr_a = perform_crosscorrelation_left(
                             sd, sample_pixel_size, square_shift, binary_images, norm_images, topsurface, matrices, t,
                             top_F90_scores, top_matrix_F90, max_location_F90, model_matrices_F90,
@@ -1111,7 +1122,7 @@ def big_loop(sf, sd, gs, uc, miller, co, square_shift, iv_inp):
                         #              top_v_shearing[best4][max_ind][5] + pow(-1, random.randint(10)) * np.random.randint(0, 100)/100 * wobble_she]
 
                         # performing crosscorrelation of the model with the 4 FIB SEM cuts
-                        binary_images, norm_images, labels, matrices, A, topsurface = create_4cs(v_scaling, v_rotations, v_shearing, gs, uc, miller, t)
+                        binary_images, norm_images, labels, matrices, A, topsurface = create_4cs(v_scaling, v_rotations, v_shearing, gs, uc, miller, t, corner)
                         top_transf_matrices, top_score, max_location, model_matrices, top_v_sca, top_v_rot, top_v_she, topsurfaces, t, cropped_samples, top_corr_a = perform_crosscorrelation_left(sd, sample_pixel_size, square_shift, binary_images, norm_images, topsurface, matrices, t,
                                                                                                                                                                                                                top_F90_scores, top_matrix_F90, max_location_F90, model_matrices_F90,
                                                                                                                                                                                                            top_F24_scores, top_matrix_F24, max_location_F24, model_matrices_F24, 
@@ -1266,7 +1277,7 @@ def create_crosssections(sf, dir, gs, uc, miller, corner, sample_sh, iv_inp):
 
     binary_images, norm_images, labels, matrices, A, topsurface = create_4cs(v_scaling, v_rotations,
                                                                               v_shearing, gs, uc,
-                                                                              miller, t)
+                                                                              miller, t, corner)
     matrices_binary = [binary_images[0][0], binary_images[1][0], binary_images[2][0], binary_images[3][0]]
 
     for i in range(0, 1):
@@ -1434,12 +1445,18 @@ if __name__ == '__main__':
 
     start = time.time()
     p1 = mp.Process(target=create_crosssections, args=(
-        saving_files[0], samples_dir[0], grid_size_model, unitcell_in_pixel, first_miller, corner[0],
+        saving_files[0], samples_dir[0], grid_size_model, unitcell_in_pixel, first_miller, corner[1],
         sample_square_shift[0], iv_input))
 
+    #p2 = mp.Process(target=create_crosssections, args=(
+    #        saving_files[0], samples_dir[0], grid_size_model, unitcell_in_pixel, first_miller, corner[1],
+    #        sample_square_shift[0], iv_input))
+
     p1.start()
+    #p2.start()
 
     p1.join()
+    #p2.join()
     end = time.time()
 
     print(f'1st execution: {end-start}')
