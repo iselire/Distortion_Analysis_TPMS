@@ -9,9 +9,10 @@ Type "copyright", "credits" or "license" for more information.
 IPython 8.30.0 -- An enhanced Interactive Python. Type '?' for help.
 
 ## Python environment for Pycharm 
-Requirements needed for the files
-20260531_crosscorrelation_loop_pycharm_multiprocessing_optimise_test_rot_sca_she.py
-20260531_crosscorrelation_loop_pycharm_multiprocessing_optimise_test_rot.py
-20240623_create_crosssections.py
-listed in "pycharm_venv_requirements_python_3.13.txt" for Python version 3.13.
+Requirements needed for the files <br />
+20260531_crosscorrelation_loop_pycharm_multiprocessing_optimise_test_rot_sca_she.py <br />
+20260531_crosscorrelation_loop_pycharm_multiprocessing_optimise_test_rot.py <br />
+20240623_create_crosssections.py <br />
+
+are listed in "pycharm_venv_requirements_python_3.13.txt" for Python version 3.13.
 
