@@ -8,7 +8,7 @@ Creating sample cross-sections with specific scaling, rotation, shearing, and fi
 20240713_crosssections_array_data.csv <br />
  <br />
 20260531_crosscorrelation_loop_pycharm_multiprocessing_optimise_test_rot.py (PyCharm) <br />
-Multiprocessing of the cross-correlation only using rotation as a variable parameter. 
+Multiprocessing of the cross-correlation of matrices only using rotation as a variable parameter. 
  <br />
  <br />
  20260531_crosscorrelation_loop_pycharm_multiprocessing_optimise_test_rot_sca_she.py <br />
@@ -23,7 +23,10 @@ Multiprocessing of the cross-correlation only using rotation as a variable param
  Scatterplot of the top surface with the corresponding correlation.
  <br />
  <br />
- 
+ 20260611_conv2d_loop_pycharm_cleanup_pass.py (PyCharm) <br />
+Multiprocessing of the cross-correlation turning the matrices and images into tensors, with the choice of choosing 'cpu' or 'cuda'. 
+ <br />
+ <br />
 ## Python environment for Spyder (Conda: anaconda3 (Python 3.13.5)):
 Python 3.13.5 | packaged by Anaconda, Inc. | 
 (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]
