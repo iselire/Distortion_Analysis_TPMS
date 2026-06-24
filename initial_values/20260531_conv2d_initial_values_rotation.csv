@@ -1,0 +1,9 @@
+Description,Array
+scaling,"[(1.0, 1.0, 1.0), (1.0, 1.0, 1.0), (1.0, 1.0, 1.0), (1.0, 1.0, 1.0)]"
+rotation,"[(0, 0, 0), (187.5, 288.7, 230.0), (284.0, 37.2, 250.0), (5.6, 245.3, 40.5)]"
+shearing,"[(0.0, 0.0, 0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0, 0.0, 0.0)]"
+topsurface,"[array([0.70363506, 0.6800193 , 0.20608606]), array([ 0.96180557, -0.02668954,  0.27242928]), array([0.75091298, 0.57893481, 0.31774862]), array([-0.1927704 , -0.96868531,  0.15648751])]"
+single_correlation,"([tensor([[[[1.3946]]]], device='cuda:0'), tensor([[[[1.4765]]]], device='cuda:0'), tensor([[[[1.3829]]]], device='cuda:0'), tensor([[[[1.4899]]]], device='cuda:0')], [tensor([[[[0.6689]]]], device='cuda:0'), tensor([[[[1.0050]]]], device='cuda:0'), tensor([[[[0.7123]]]], device='cuda:0'), tensor([[[[0.7508]]]], device='cuda:0')], [tensor([[[[1.3160]]]], device='cuda:0'), tensor([[[[1.3929]]]], device='cuda:0'), tensor([[[[1.4012]]]], device='cuda:0'), tensor([[[[1.3578]]]], device='cuda:0')], [tensor([[[[1.1722]]]], device='cuda:0'), tensor([[[[1.1070]]]], device='cuda:0'), tensor([[[[1.1655]]]], device='cuda:0'), tensor([[[[1.1822]]]], device='cuda:0')])"
+overall_correlation,"[0.0, 0.0, 0.0, 0.0]"
+runs_needed,4999
+time needed,"0d, 0h, 22min, 32s"
