@@ -4,21 +4,13 @@ Scripts and graphics used for the publication of "Macroscopic Order in Block Cop
 ## Files
 ### distorted_test_L, distorted_test_R <br />
 Distorted cross-sections created with 20240623_create_crosssections.py (PyCharm). The cross-section relations are front and left of a cube (F90, F24, L90, L24) for the distorted_test_L and the front right of a cube (R90, R24, F90, F24) for the distorted_test_L. Distortion parameters are added as .csv files in the folder. 
-<br />
-<br />
-rot_test_L <br />
+### rot_test_L <br />
 Cross-sections with zero rotation or distortion. The cross-section relations are front and left of a cube (F90, F24, L90, L24)c. Distortion parameters are added as .csv files in the folder.
-<br />
-<br />
-b11_l_1 <br />
+### b11_l_1 <br />
 FIB SEM cross-sections of a gyroid sample.
-<br />
-<br />
-initial_values <br />
+### initial_values <br />
 Initial values for the cross-correlation used for 20260611_conv2d_loop_pycharm_cleanup_pass.py (PyCharm).
-<br />
-<br />
-example_plot <br />
+### example_plot <br />
 Example plots coming from 20260611_conv2d_loop_pycharm_cleanup_pass.py (PyCharm), showing one of the problems still occuring in the code. <br />
 20260614_conv2d_plot_L1_optimize.png --> single loop using the initial values <br />
 20260624_conv2d_plot_L_0_10_optimize.png --> multiple loop using the initial values <br />
