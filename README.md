@@ -6,7 +6,10 @@ Scripts and graphics used for the publication of "Macroscopic Order in Block Cop
 Creating sample cross-sections with specific scaling, rotation, shearing, and fill fraction. The cross-section relations are either front and left of a cube (F90, F24, L90, L24) or at the front right of a cube (R90, R24, F90, F24). Check the chapter in the thesis for more information. PDF of the chapter is uploaded here as 20260624_distortion_analysis_tpms.pdf. <br />
 <br />
 20240713_crosssections_array_data.csv <br />
-
+ <br />
+20260531_crosscorrelation_loop_pycharm_multiprocessing_optimise_test_rot.py (PyCharm) <br />
+Multiprocessing of the cross-correlation only using rotation as a variable parameter. 
+ <br />
 ## Python environment for Spyder (Conda: anaconda3 (Python 3.13.5)):
 Python 3.13.5 | packaged by Anaconda, Inc. | 
 (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]
