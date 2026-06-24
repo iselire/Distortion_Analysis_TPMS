@@ -15,6 +15,10 @@ Multiprocessing of the cross-correlation only using rotation as a variable param
  Multiprocessing of the cross-correlation using scaling, rotation, and shearing as a variable parameters. 
  <br />
  <br />
+ 20260531_crosscorrelation_loop_spyder_optimise.py (Spyder) <br />
+ Optimisation loop of the cross-correlation.
+ <br />
+ <br />
  
 ## Python environment for Spyder (Conda: anaconda3 (Python 3.13.5)):
 Python 3.13.5 | packaged by Anaconda, Inc. | 
