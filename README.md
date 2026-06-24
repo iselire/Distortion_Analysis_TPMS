@@ -19,7 +19,10 @@ Initial values for the cross-correlation used for 20260611_conv2d_loop_pycharm_c
 <br />
 <br />
 example_plot <br />
-Example plots coming from 20260611_conv2d_loop_pycharm_cleanup_pass.py (PyCharm), single loop using the initial values.
+Example plots coming from 20260611_conv2d_loop_pycharm_cleanup_pass.py (PyCharm), showing one of the problems still occuring in the code. <br />
+20260614_conv2d_plot_L1_optimize.png --> single loop using the initial values <br />
+20260624_conv2d_plot_L_0_10_optimize.png --> multiple loop using the initial values <br />
+20260624_conv2d_plot_L_3_100_optimize.png --> multiple loop using random initial values <br />
 <br />
 <br />
 ## Code Descriptions
