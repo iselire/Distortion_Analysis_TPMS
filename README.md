@@ -10,6 +10,12 @@ Creating sample cross-sections with specific scaling, rotation, shearing, and fi
 20260531_crosscorrelation_loop_pycharm_multiprocessing_optimise_test_rot.py (PyCharm) <br />
 Multiprocessing of the cross-correlation only using rotation as a variable parameter. 
  <br />
+ <br />
+ 20260531_crosscorrelation_loop_pycharm_multiprocessing_optimise_test_rot_sca_she.py <br />
+ Multiprocessing of the cross-correlation using scaling, rotation, and shearing as a variable parameters. 
+ <br />
+ <br />
+ 
 ## Python environment for Spyder (Conda: anaconda3 (Python 3.13.5)):
 Python 3.13.5 | packaged by Anaconda, Inc. | 
 (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]
