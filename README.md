@@ -19,6 +19,10 @@ Multiprocessing of the cross-correlation only using rotation as a variable param
  Optimisation loop of the cross-correlation.
  <br />
  <br />
+ 20260531_scatterplot_topsurface_plot_best_rot_test.py (Spyder) <br />
+ Scatterplot of the top surface with the corresponding correlation.
+ <br />
+ <br />
  
 ## Python environment for Spyder (Conda: anaconda3 (Python 3.13.5)):
 Python 3.13.5 | packaged by Anaconda, Inc. | 
