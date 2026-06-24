@@ -23,6 +23,7 @@ Example plots coming from 20260611_conv2d_loop_pycharm_cleanup_pass.py (PyCharm)
 20260614_conv2d_plot_L1_optimize.png --> single loop using the initial values <br />
 20260624_conv2d_plot_L_0_10_optimize.png --> multiple loop using the initial values <br />
 20260624_conv2d_plot_L_3_100_optimize.png --> multiple loop using random initial values <br />
+20240623_test_12x200_iterations_topsurface_R_binary.png --> scatterplot showing the top surface orientation on a sphere with the coloration depicting the correlation. Yellow dots represent initial values, whereas orange and pink represent basic vectors. Data was created with Spyder, cross-correlation from PyCharm doesn't show the initial values yet. 
 <br />
 <br />
 ## Code Descriptions
