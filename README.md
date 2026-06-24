@@ -2,7 +2,7 @@
 Scripts and graphics used for the publication of "Macroscopic Order in Block Copolymer Gyroid Films by Solvent Evaporation Annealing"
 
 ## Files
-distorted_test_L, distorted_test_R <br />
+### distorted_test_L, distorted_test_R <br />
 Distorted cross-sections created with 20240623_create_crosssections.py (PyCharm). The cross-section relations are front and left of a cube (F90, F24, L90, L24) for the distorted_test_L and the front right of a cube (R90, R24, F90, F24) for the distorted_test_L. Distortion parameters are added as .csv files in the folder. 
 <br />
 <br />
