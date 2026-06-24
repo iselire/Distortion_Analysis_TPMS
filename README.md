@@ -27,6 +27,11 @@ Multiprocessing of the cross-correlation of matrices only using rotation as a va
 Multiprocessing of the cross-correlation turning the matrices and images into tensors, with the choice of choosing 'cpu' or 'cuda'. 
  <br />
  <br />
+ 20260624_scatterplot_topsurface_plot_pycharm_results_spyder.py (Spyder) <br />
+ Scatterplot of the top surface with the corresponding correlation of the results calculated with PyCharm.
+ <br />
+ <br />
+ 
 ## Python environment for Spyder (Conda: anaconda3 (Python 3.13.5)):
 Python 3.13.5 | packaged by Anaconda, Inc. | 
 (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]
