@@ -14,6 +14,10 @@ b11_l_1 <br />
 FIB SEM cross-sections of a gyroid sample.
 <br />
 <br />
+initial_values <br />
+Initial values for the cross-correlation used for 20260611_conv2d_loop_pycharm_cleanup_pass.py (PyCharm).
+<br />
+<br />
 example_plot <br />
 Example plots coming from 20260611_conv2d_loop_pycharm_cleanup_pass.py (PyCharm), single loop using the initial values.
 <br />
