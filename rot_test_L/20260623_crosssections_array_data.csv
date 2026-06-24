@@ -1,0 +1,6 @@
+Description,Array
+scaling,"[(1.0, 1.0, 1.0)]"
+rotation,"[(0.0, 0.0, 0.0)]"
+shearing,"[(0.0, 0.0, 0.0, 0.0, 0.0, 0.0)]"
+topsurface,"[np.float64(6.123233995736766e-17), np.float64(0.0), np.float64(-1.0)]"
+threshold,-0.05
